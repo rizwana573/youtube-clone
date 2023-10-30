@@ -11,7 +11,7 @@ async function fetchVideos(searchQuery, maxResults) {
   console.log(data.items);
 }
 
-fetchVideos("icc", 50); // keep it empty for first page result
+// fetchVideos("icc", 50); // keep it empty for first page result
 
 // thumbnail
 // video title
@@ -42,3 +42,14 @@ async function getChannelLogo(channelId){
 
 // snippet gives me video infomation as well
 
+async function getComments(videoId){
+    const response = await fetch(`${BASE_URL}/commentThreads?key=${API_KEY}&videoId=${videoId}&maxResults=25&part=snippet`);
+    const data = await response.json();
+    console.log(data);
+}
+
+getComments('Kwu1yIC-ssg');
+
+// items.map
+// for each and every item
+// snippet.topLevelComment.snippet.textDisplay
