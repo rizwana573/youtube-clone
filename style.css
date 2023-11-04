@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+    max-width: 100%;
+    -webkit-appearance: none;
+  }
+  body {
+    background: #000;
+    color: #fff;
+  }
+  ul {
+    list-style-type: none;
+  }
+  #slider {
+    background: #212121;
+    padding: 15px;
+    min-width: 15vw;
+  }
+  
+  nav#userMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+  }
+  article#logoAndHam {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  input#searchVids {
+    outline: none;
+    padding: 5px;
+    border: none;
+    min-width: 25vw;
+  }
+  
+  form#searchBar1 {
+    background: #c73c0e;
+  }
+  
+  span#submit1 {
+    padding: 0 10px;
+    cursor: pointer;
+  }
+  svg#hamburgerMenu {
+      cursor: pointer;
+  }
+  article#banner img {
+      width: 100%;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  #slider ul li a img,
+  #slider ul li a i {
+    margin-right: 8px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  #slider ul li {
+    margin: 30px auto;
+    vertical-align: top;
+  }
+  
+  ul#resultsList {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    padding: 20px;
+    grid-template-rows: auto;
+  }
+  img {
+    max-width: 100%;
+    height: max-content;
+  }
+  
+  span.channelName {
+    margin: 10px auto;
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+  }
+  img.thumbnail {
+    width: 30vw;
+    height: 14vw;
+    object-fit: scale-down;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    filter: opacity(0.7);
+  }
+  .viewsAndTimestamp {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+  }
+  .thumbnailWrapper {
+      position: relative;
+  }
+  .videoId{
+    display: none;
+  }
+  img.playIcon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 4vw;
+      cursor: pointer;
+  }
+
+  /* video detail css */
+  .videoDetailPage{
+    background: #a19999;
+  }
+.videoDetailPage #videoFrame{
+    padding:30px;
+}
+.videoDetailPage ul#videoComments {
+    padding: 30px;
+    background: #4e4b4b;
+}
+.videoDetailPage ul#videoComments .userPic {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.videoDetailPage .cardWrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.videoDetailPage span.commentContent {
+    display: block;
+}
+
+.videoDetailPage #videoComments li {
+    margin: 20px auto;
+}
+
+.videoDetailPage span.commentRepliesCount {
+    margin: 0 0px 0 25px;
+}

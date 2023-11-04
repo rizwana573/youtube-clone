@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube | Clone | Video Details</title>
+    <link rel="icon" href="./images/ytBtn.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body class="videoDetailPage">
+    <header>
+        <nav id="userMenu" class="menuList">
+          <article id="logoAndHam">
+            <svg
+              id="hamburgerMenu"
+              width="20"
+              height="18"
+              viewBox="0 0 20 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.25 0.333374H19.75V2.50004H0.25V0.333374ZM0.25 7.91671H19.75V10.0834H0.25V7.91671ZM19.75 15.5H0.25V17.6667H19.75V15.5Z"
+                fill="#fff"
+              />
+            </svg>
+            <div class="logo">
+              <a class="ytlogo" href="#"
+                ><img src="./images/ytLogo.png" alt="logo"
+              /></a>
+            </div>
+          </article>
+          <article>
+            <form class="searchBar" id="searchBar1" method="POST" action="./index.html">
+              <article>
+                <input id="searchVids" type="search" placeholder="Search" />
+                <span type="submit" id="submit1"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </article>
+            </form>
+          </article>
+          <article class="miscLinks">
+            <div id="userName">
+              <i class="fa-solid fa-user" style="color: #e3e5e8"></i>
+            </div>
+          </article>
+        </nav>
+        <!-- </section> -->
+      </header>
+    <article id ="videoFrame">
+        <div id="videoWrapper">
+            <div id="video-container"></div>
+        </div>
+    </article>
+    <ul id="videoComments">
+    </ul>
+    <!-- this cdn is defining YT class -->
+    <!-- this YT class needs a divID to render video player iframe-->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <!-- in this script I will be using this YT class -->
+    <script src="./videoPlayer.js"></script>
+</body>
+</html>

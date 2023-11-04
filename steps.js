@@ -12,3 +12,5 @@
 // 6. click on create credentials
 
 // 7. select public data and you will get API key
+
+// AIzaSyDcIUihZx2JEge0oENpiknxLN4p4oGOidg
