@@ -61,11 +61,18 @@ getComments(videoId);
 function renderComments(arrayOfComments) {
   let commentsList = document.getElementById("videoComments");
   if (arrayOfComments == undefined) {
-    console.log("comments are off!");
+    //console.log("comments are off!");
     let displayMsg = document.createElement("div");
     displayMsg.innerText = "Comments are turned off for this video.";
     commentsList.appendChild(displayMsg);
-  } else {
+  }
+  else if (arrayOfComments.length == 0) {
+    //console.log("comments are off!");
+    let displayMsg = document.createElement("div");
+    displayMsg.innerText = "There are no comments for this video yet!";
+    commentsList.appendChild(displayMsg);
+  }
+   else {
     arrayOfComments.forEach((comment) => {
       let card = document.createElement("li");
       card.class = "commentsCard";
